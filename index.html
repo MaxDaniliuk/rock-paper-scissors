@@ -4,10 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock-Paper-Scissors Game</title>
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <p>GUI will be added later</p>
+    <div id="body" class="container">
+        <div class="container-header">
+            <p class="game-name">Rock Paper Scissors</p>
+            <p class="game-rule">Get 5 points to win</p>
+        </div>
+        <br>
+        <div class="round-output">Let's play!</div>
+        <div class="game-results">
+            <div class="player">
+                <p>Player: <span class="player-score">0</span></p>
+               
+            </div>
+            <div class="computer">
+                <p>Computer: <span class="computer-score">0</span></p>
+                
+            </div>
+        </div>
+        <div class="container-body">
+            <button class="btn rock">Rock</button>
+            <button class="btn paper">Paper</button>
+            <button class="btn scissors">Scissors</button> 
+        </div>
+    </div>
     <script src="./app.js"></script>
 </body>
 </html>
