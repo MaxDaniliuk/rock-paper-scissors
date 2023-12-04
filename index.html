@@ -10,27 +10,34 @@
 <body>
     <div id="body" class="container">
         <div class="container-header">
-            <p class="game-name">Rock Paper Scissors</p>
-            <p class="game-rule">Get 5 points to win</p>
+            <div class="game-name">Rock Paper Scissors</div>
+            <div class="game-rule">Get 5 points to win</div>
         </div>
-        <br>
-        <div class="round-output">Let's play!</div>
-        <div class="game-results">
-            <div class="player">
-                <p>Player: <span class="player-score">0</span></p>
-               
-            </div>
-            <div class="computer">
-                <p>Computer: <span class="computer-score">0</span></p>
-                
-            </div>
-        </div>
+        
         <div class="container-body">
-            <button class="btn rock">Rock</button>
-            <button class="btn paper">Paper</button>
-            <button class="btn scissors">Scissors</button> 
-        </div>
+            <div class="round-output">Let's play!</div>
+            <div class="game-results">
+                <div class="player">
+                    <p>Player: <span class="player-score">0</span></p>
+                </div>
+                <div class="computer">
+                    <p>Computer: <span class="computer-score">0</span></p>
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="play-btn rock">Rock</button>
+                <button class="play-btn paper">Paper</button>
+                <button class="play-btn scissors">Scissors</button> 
+            </div>
+         </div>
     </div>
+    <dialog class="modal" id="modal">
+        <div class="modal-block">
+            <div class="modal-text">Display game result</div> 
+            <br>   
+            <button class="modal-button close-button">Play again</button>
+        </div>
+    </dialog>
     <script src="./app.js"></script>
 </body>
 </html>

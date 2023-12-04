@@ -1,34 +1,117 @@
-*, *::before, *::after {
+*, 
+*::before, 
+*::after {
     box-sizing: border-box;
-  }
+}
+
 body {
     margin: 0;
-    height: 100hv;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .container-header {
     text-align: center;
-    padding: 50px;
-    color: gold;
-    background-color: black;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+.game-name,
+.game-rule,
+.round-output,
+.game-results,
+.buttons {
+    flex-shrink: 1;;
 }
 
 .game-name {
-    font-size: xx-large;
+    font-size: 50px;
+}
+
+.game-rule {
+    font-size: 20px;
+    margin-top: 10px;
 }
 
 .container-body {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    
+    flex-direction: column;
+}
+
+body, 
+.container-body,
+.container-header {
+    background-color: #454545; 
+    color: #edebad;
+}
+
+.round-output {
+    text-align: center;
+    padding-top: 15px;
+    margin-top: 40px;
+    font-size: 30px;
 }
 
 .game-results {
     display: flex;
     justify-content: space-evenly;
+    font-size: 45px;
+    margin-top: 20px;
 }
 
-.round-output {
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px; 
+}
+
+.play-btn {
+    border: none;
+    border-radius: 25px;
+    margin-top: 75px;
+    padding: 75px;
+    background: gold;
+    font-size: 50px;
+}
+
+.play-btn:hover,
+.modal-button:hover {
+    background: goldenrod;
+}
+
+.modal {
+    border: none;
+    background-color: #454545;
+    padding: 1em; 
+    width: 250px;
+    height: 150px;
+
+    & > * {
+        margin: 0 0 0.5rem 0;
+    }
+}
+
+.modal::backdrop {
+    background: rgb(0 0 0 / 0.7)
+}
+
+.modal-text {
     text-align: center;
+    font-size: 35px;
+}
+
+.modal-block {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.modal-button {
+    border: solid black;
+    border-radius: 25px;
+    background-color: gold;
+    font-size: 25px;
+    margin-top: 10px;
 }
